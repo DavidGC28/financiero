@@ -5,6 +5,11 @@ public class Cliente {
     private String nombre;
     private String apellido;
 
+
+    public Cliente() {
+        
+    }
+
     
     public Cliente(String cedula, String nombre, String apellido) {
         this.cedula = cedula;
@@ -37,7 +42,7 @@ public class Cliente {
         this.apellido = apellido;
     }
 
-   
+ 
     public void imprimir() {
         System.out.println("--- Cliente ---");
         System.out.println("Cédula: " + cedula);
