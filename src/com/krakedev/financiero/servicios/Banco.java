@@ -28,6 +28,16 @@ public class Banco {
      
         return nuevaCuenta;
     }
+    
+    public boolean depositar(double monto, Cuenta cuenta) {
+        if (monto > 0) {
+            double saldoActual = cuenta.getSaldoActual();
+            cuenta.setSaldoActual(saldoActual + monto);
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 
     public int getUltimoCodigo() {
